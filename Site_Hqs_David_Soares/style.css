@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align:center;
+}
+
+/* Frame 1 */
+.menu{
+    background-color:#434247;
+}
+
+/* Centraliza o texto do título do menu */
+.menu h3{
+    text-align:center;
+    color:white;
+}
+
+/* lista */
+ul{
+    list-style:none;
+    padding:0;
+}
+
+/* caixas das HQs */
+li{
+    background-color:#3D615B;
+    margin:10px;
+    padding:15px;
+    text-align:center;
+}
+
+/* links */
+li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    display:block;
+}
+
+/* Frame 2 */
+.viewer{
+    background-color:#5C735E;
+}
