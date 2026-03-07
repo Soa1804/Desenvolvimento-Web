@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Galeria de Jogos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>IFrame</h1>
+
+<iframe id="frameJogos" src="paginas/gow.html"></iframe>
+
+<div class="botoes">
+<button onclick="anterior()">&lt&lt Anterior</button>
+<button onclick="proximo()">Próximo &gt&gt</button>
+</div>
+
+<script>
+
+let paginas = [
+"paginas/gow.html",
+"paginas/ds3.html",
+"paginas/fc4.html",
+"paginas/gtav.html",
+"paginas/project_zomboid.html",
+"paginas/valorant.html"
+];
+
+let atual = 0;
+
+function proximo(){
+atual++;
+if(atual >= paginas.length){
+atual = 0;
+}
+document.getElementById("frameJogos").src = paginas[atual];
+}
+
+function anterior(){
+atual--;
+if(atual < 0){
+atual = paginas.length - 1;
+}
+document.getElementById("frameJogos").src = paginas[atual];
+}
+
+</script>
+
+</body>
+</html>
