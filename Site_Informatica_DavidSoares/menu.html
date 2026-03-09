@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function abrirMenu(id){
+
+var menu=document.getElementById(id);
+
+if(menu.style.display=="block"){
+menu.style.display="none";
+}else{
+menu.style.display="block";
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h3 style="text-align:center;">MENU</h3>
+
+<a href="inicio.html" target="conteudo" class="botao">
+Página Inicial
+</a>
+
+<div class="botao" onclick="abrirMenu('info')">
+Informática Básica
+</div>
+
+<div id="info" class="submenu">
+<a href="Informatica/apostila_info.html" target="conteudo">Apostilas</a>
+<a href="Informatica/aulas_info.html" target="conteudo">Aulas</a>
+<a href="Informatica/exercicios_info.html" target="conteudo">Exercícios</a>
+</div>
+
+
+<div class="botao" onclick="abrirMenu('manut')">
+Manutenção
+</div>
+
+<div id="manut" class="submenu">
+<a href="Manutencao/apostila_manut.html" target="conteudo">Apostilas</a>
+<a href="Manutencao/aulas_manut.html" target="conteudo">Aulas</a>
+<a href="Manutencao/exercicios_manut.html" target="conteudo">Exercícios</a>
+</div>
+
+
+<div class="botao" onclick="abrirMenu('prog')">
+Programação
+</div>
+
+<div id="prog" class="submenu">
+<a href="Progamacao/apostila_prog.html" target="conteudo">Apostilas</a>
+<a href="Progamacao/aulas_prog.html" target="conteudo">Aulas</a>
+<a href="Progamacao/exercicios_prog.html" target="conteudo">Exercícios</a>
+</div>
+
+</body>
+</html>
